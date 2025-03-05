@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = +prompt("Nhập vào số bất kỳ :");
+        console.log("Các ước của " + num + " là :")
+        for (let i = 1; i <= Math.abs(num); i++) {
+        if (num % i === 0) {
+            console.log(i);
+        }
+    }
+    </script>
+</body>
+</html>

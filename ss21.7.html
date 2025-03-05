@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let money = +prompt("Nhập vào số tiền ban đầu");
+        let monthlyInterest = +prompt("Nhập vào lãi suất tháng");
+        let month = +prompt("Nhập số tháng gửi");
+
+        let receive = money * (1 + 1/100) ** month ;
+        console.log("Tiền nhận được : " + receive)
+
+        let interest = receive - money ;
+        console.log("Tiền lãi : " + interest)
+
+    </script>
+</body>
+</html>

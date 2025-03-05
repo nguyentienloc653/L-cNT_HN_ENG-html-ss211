@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let num = +prompt("Nhập vào số nguyên bất kỳ : ")
+        if (!isNaN(n) && n > 0) {
+    let primes = [];
+    let num = 2;
+    while (primes.length < n) {
+        let isPrime = true;
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) {
+            primes.push(num);
+        }
+        num++;
+    }
+    console.log(`${n} số nguyên tố đầu tiên:`, primes);
+} else {
+    console.log("Không hợp lệ.");
+}
+
+    </script>
+</body>
+</html>

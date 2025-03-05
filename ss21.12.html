@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let colors = ["red", "blue", "green", "yellow", "purple", "orange", "cyan", "magenta"];
+        for(let num = 1; num <= 10; num ++){
+
+            let random = colors[Math.floor(Math.random() * colors.length)];
+            console.log(`%c màu sắc đã thay đổi `, `color: ${random}; `);
+        }
+
+    </script>
+</body>
+</html>
